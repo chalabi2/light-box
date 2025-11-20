@@ -42,6 +42,6 @@ The ESP32 runs a fully embedded system with no external connectivity required. T
     <td><img src="images/IMG_0969.png" width="200"/></td>
   </tr>
   <tr>
-    <td colspan="4" align="center"><img src="images/IMG_0971.gif" width="800"/></td>
+    <td colspan="4" align="center"><img src="images/IMG_0972.gif" width="800"/></td>
   </tr>
 </table>
