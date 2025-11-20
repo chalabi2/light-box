@@ -1,0 +1,21 @@
+[Unit]
+Description=GitHub Activity Proxy Server for ESP32 LED Panel
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/bin/python3 /home/ubuntu/Documents/Code/led-panel/github_proxy_server.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Environment variables
+EnvironmentFile=/etc/github-proxy.env
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target 

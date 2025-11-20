@@ -1,0 +1,48 @@
+{
+    "configurations": [
+        {
+            "name": "Arduino",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/share/arduino/hardware/arduino/avr/cores/arduino",
+                "/usr/share/arduino/hardware/arduino/avr/variants/standard",
+                "/usr/share/arduino/libraries/**",
+                "/home/ubuntu/Arduino/libraries/**",
+                "/usr/share/arduino/hardware/arduino/avr/libraries/**"
+            ],
+            "defines": [
+                "ARDUINO=10819",
+                "ARDUINO_AVR_UNO",
+                "ARDUINO_ARCH_AVR",
+                "__AVR_ATmega328P__"
+            ],
+            "compilerPath": "/usr/bin/avr-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64",
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                "-DF_CPU=16000000L"
+            ]
+        },
+        {
+            "name": "ESP32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/ubuntu/.platformio/packages/framework-arduinoespressif32/cores/esp32",
+                "/home/ubuntu/.platformio/packages/framework-arduinoespressif32/libraries/**",
+                "/home/ubuntu/.platformio/packages/toolchain-xtensa32/xtensa-esp32-elf/include"
+            ],
+            "defines": [
+                "ARDUINO=10819",
+                "ESP32",
+                "ARDUINO_ARCH_ESP32"
+            ],
+            "compilerPath": "/home/ubuntu/.platformio/packages/toolchain-xtensa32/bin/xtensa-esp32-elf-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+} 

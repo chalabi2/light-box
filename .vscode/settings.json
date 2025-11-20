@@ -1,0 +1,28 @@
+{
+    "arduino.path": "/usr/share/arduino",
+    "arduino.commandPath": "arduino",
+    "arduino.logLevel": "info",
+    "arduino.enableUSBDetection": true,
+    "arduino.disableTestingOpen": false,
+    "arduino.skipHeaderProvider": false,
+    "arduino.additionalUrls": [
+        "https://dl.espressif.com/dl/package_esp32_index.json",
+        "https://arduino.esp8266.com/stable/package_esp8266com_index.json"
+    ],
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "C_Cpp.autocomplete": "Enabled",
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.associations": {
+        "*.ino": "cpp",
+        "*.h": "c",
+        "*.cpp": "cpp"
+    },
+    "platformio-ide.useBuiltinPIOCore": true,
+    "platformio-ide.useDevelopmentPIOCore": false,
+    "platformio-ide.autoRebuildAutocompleteIndex": true,
+    "platformio-ide.customPATH": null,
+    "terminal.integrated.env.linux": {
+        "PATH": "/home/ubuntu/.platformio/penv/bin:${env:PATH}"
+    }
+} 

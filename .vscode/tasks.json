@@ -1,0 +1,81 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "arduino:compile",
+            "type": "shell",
+            "command": "arduino-cli",
+            "args": [
+                "compile",
+                "--fqbn",
+                "arduino:avr:uno",
+                "${workspaceFolder}"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": "relative",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "label": "arduino:upload",
+            "type": "shell",
+            "command": "arduino-cli",
+            "args": [
+                "upload",
+                "--fqbn",
+                "arduino:avr:uno",
+                "--port",
+                "/dev/ttyUSB0",
+                "${workspaceFolder}"
+            ],
+            "group": "build",
+            "dependsOn": "arduino:compile"
+        },
+        {
+            "label": "platformio:build",
+            "type": "platformio",
+            "command": "build"
+        },
+        {
+            "label": "platformio:upload",
+            "type": "platformio",
+            "command": "upload"
+        },
+        {
+            "label": "platformio:monitor",
+            "type": "platformio",
+            "command": "monitor"
+        },
+        {
+            "label": "serial:monitor",
+            "type": "shell",
+            "command": "screen",
+            "args": [
+                "/dev/ttyUSB0",
+                "9600"
+            ],
+            "isBackground": true,
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            }
+        }
+    ]
+} 
