@@ -15,7 +15,7 @@ A battery-powered 16x16 addressable LED panel with motion sensing and interactiv
 - MPU6050 Gyroscope/Accelerometer
 - 3x Tactile Push Buttons
 
-The LED panel is controlled by the ESP32 which is powered by a 10000mAh Li-ion battery with USB-C charging. The TPS61088 boost converter steps up the battery voltage to 5V for the LED panel, while the Max17048 fuel gauge provides accurate battery monitoring. An MPU6050 gyroscope enables tilt-based controls for the interactive mazeball game and some patterns. Three buttons provide physical controls for pattern cycling, battery display, and brightness control. The entire system features auto-dimming based on battery level to extend runtime up to 8 hours.
+The LED panel is controlled by the ESP32 which is powered by a 10000mAh Li-ion battery with USB-C charging. The TPS61088 boost converter steps up the battery voltage to 5V for the LED panel, while the Max17048 fuel gauge provides accurate battery monitoring. An MPU6050 gyroscope enables tilt-based controls for the interactive mazeball game and some patterns. Three buttons provide physical controls for pattern cycling, battery display, and brightness control. The entire system features auto-dimming based on battery level to extend runtime up to 8 hours. Housed in a custom designed and 3d printed case and light diffuser.
 
 ## Software
 
